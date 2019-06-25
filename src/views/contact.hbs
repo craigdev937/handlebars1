@@ -1,0 +1,15 @@
+<style>
+    h2 {
+        font-size: 2rem;
+        padding-left: 30px;
+    }
+</style>
+
+<h1 class="banner">Contact</h1>
+{{#each lists as |xValue xKey| }}
+    {{#each this/items as |name id| }}
+        <h2>{{name}}</h2>
+    {{/each}}
+    <hr>
+{{/each}}
+
