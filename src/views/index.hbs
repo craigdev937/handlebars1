@@ -1,13 +1,8 @@
-<h1 class="banner">Handlebars</h1>
-<h3>Hi, my name is: {{{ name }}}</h3>
-<h3>I am {{{ age }}} years old.</h3>
-<h3>Is {{{ name }}} really a college professor?</h3>    
+{{> header }}
 
-{{#if isProfessor}} 
-    {{!-- true --}}
-    Answer: <h2>Yes, he is a Professor!</h2>
-{{else}} 
-    {{!-- false --}}
-    Answer: <h2>No, he is not.</h2>
-{{/if}}
+<h1>Index Page</h1>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quo voluptates ea aut totam itaque eius odit reprehenderit asperiores fugit, vel minus labore excepturi? Est dicta ipsam molestiae recusandae nemo?</p>
+
+{{> footer}}
 
