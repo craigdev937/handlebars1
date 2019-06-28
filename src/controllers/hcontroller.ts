@@ -10,6 +10,23 @@ export const home = async (req, res: express.Response, next) => {
     });
 };
 
+export const lookup = async (req, res: express.Response, next) => {
+    await res.render("lookup", {
+        title: "Lookup",
+        user: {
+            username: "Nina Cortez",
+            age: 17,
+            agent: true
+        },
+        people: [
+            "Kola",
+            "Maggie",
+            "Nina",
+            "Henry"
+        ],
+    });
+};
+
 export const dashboard = async (req, res: express.Response, next) => {
     await res.render("dashboard", {
         title: "Dashboard",
